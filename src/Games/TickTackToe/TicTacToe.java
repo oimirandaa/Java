@@ -188,18 +188,18 @@ public class TicTacToe {
 	 */
 	public static String ganador()
 	{
-		List topRow = Arrays.asList(1, 2, 3);
-		List midRow = Arrays.asList(4, 5, 6);
-		List botRow = Arrays.asList(7, 8, 9);
+		List<Integer> topRow = Arrays.asList(1, 2, 3);
+		List<Integer> midRow = Arrays.asList(4, 5, 6);
+		List<Integer> botRow = Arrays.asList(7, 8, 9);
 
-		List izCol = Arrays.asList(1, 4, 7);
-		List midCol = Arrays.asList(2, 5, 8);
-		List derCol = Arrays.asList(3, 6, 9);
+		List<Integer> izCol = Arrays.asList(1, 4, 7);
+		List<Integer> midCol = Arrays.asList(2, 5, 8);
+		List<Integer> derCol = Arrays.asList(3, 6, 9);
 		
-		List diagonal1 = Arrays.asList(1,5,9);
-		List diagonal2 = Arrays.asList(3,5,7);
+		List<Integer> diagonal1 = Arrays.asList(1,5,9);
+		List<Integer> diagonal2 = Arrays.asList(3,5,7);
 		
-		List<List> condiciones = new ArrayList<List>();
+		List<List<Integer>> condiciones = new ArrayList<List<Integer>>();
 		
 		condiciones.add(topRow);
 		condiciones.add(midRow);
@@ -210,13 +210,13 @@ public class TicTacToe {
 		condiciones.add(diagonal1);
 		condiciones.add(diagonal2);
 		
-		for(List l:condiciones)
+		for(List<Integer> l:condiciones)
 		{
 			if(jugadorPos.containsAll(l))
 			{
 				return "Gana Jugador";
 			}
-			else if(cpuPos.contains(l))
+			else if(cpuPos.contains(1))
 			{
 				return "Gana la computadora";
 			}
