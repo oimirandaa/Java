@@ -1,4 +1,4 @@
-package Games;
+package Games.BrickBreaker;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
