@@ -1,4 +1,4 @@
-package Games.BrickBreaker;
+package Java.src.Games.BrickBreaker;
 
 import java.awt.Color;
 import java.awt.Font;

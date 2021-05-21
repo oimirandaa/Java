@@ -1,4 +1,4 @@
-package Games.BrickBreaker;
+package Java.src.Games.BrickBreaker;
 
 import javax.swing.JFrame;
 
